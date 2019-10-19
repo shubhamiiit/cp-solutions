@@ -1,9 +1,13 @@
+# Micro 
 1. Minimum adjacent swap required to make a string palindrome.
 (solutionhttps://stackoverflow.com/questions/51796237/minimum-number-of-swaps-to-convert-a-string-to-palindrome?fbclid=IwAR0cd5QgtoVZHHyuoCspcI7KDVhjA8VdqmytEqQLyOSmCWXRi6tcql7fj60)
 https://www.codechef.com/problems/ENCD12
 https://www.codechef.com/viewsolution/26846686
 
-2. https://leetcode.com/problems/longest-substring-without-repeating-characters/
+2. https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
+
+
+3. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ```cpp
   int lengthOfLongestSubstring(string s) {
         unordered_set<char> uset;
