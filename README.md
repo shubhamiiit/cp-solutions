@@ -34,7 +34,7 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
         return res;
     }
 ```
-#Samsu
+# Samsu
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
 
