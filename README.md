@@ -34,3 +34,41 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
         return res;
     }
 ```
+#Samsu
+
+1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
+
+2.https://stackoverflow.com/questions/38790990/minimum-absolute-difference-between-2-non-contiguous-equal-subarrays
+
+3.count nodes of subtrees of another subtree
+sol.
+```
+int count(TreeNode* tree){
+        if(tree == NULL)
+             return 0;
+        return count(tree->left)+count(tree->right)+1;
+}
+bool isSame(TreeNode* s, TreeNode* t){
+        if(s==nullptr && t==nullptr){
+            return true;
+        }
+        if(s==nullptr || t==nullptr ){
+            return false;
+        }
+        if(s->val!=t->val){
+            return false;
+        }
+        return isSame(s->left, t->left) && isSame(s->right,t->right);
+    }
+    
+int countSubtree(TreeNode* s, TreeNode* t) {
+if(s==nullptr){
+    return 0;
+}
+if(isSame(s,t)){
+   return count(s);
+}
+
+max(countSubtree(s->left,t), countSubtree(s->right,t));
+}
+```
