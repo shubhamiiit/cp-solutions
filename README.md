@@ -40,7 +40,7 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
 
 2.minimum-absolute-difference-between-2-non-contiguous-equal-subarrays
 sol.
-```
+```cpp
 int mindifference(int *arr, int n){
         set<int>st1,st2;
         sort(arr, arr+n);
@@ -72,7 +72,7 @@ int mindifference(int *arr, int n){
 
 3.count nodes of subtrees of another subtree
 sol.
-```
+```cpp
 int count(TreeNode* tree){
         if(tree == NULL)
              return 0;
@@ -126,7 +126,7 @@ sol.
 https://fizzbuzzer.com/mud-walls/
 
 sol.
-```
+```cpp
 int maxHeight(int[] stickPositions, int[] stickHeights) {
         int n = stickPositions.length;
         int m = stickHeights.length;
