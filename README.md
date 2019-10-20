@@ -62,13 +62,13 @@ bool isSame(TreeNode* s, TreeNode* t){
     }
     
 int countSubtree(TreeNode* s, TreeNode* t) {
-if(s==nullptr){
-    return 0;
-}
-if(isSame(s,t)){
-   return count(s);
-}
+        if(s==nullptr){
+            return 0;
+        }
+        if(isSame(s,t)){
+           return count(s);
+        }
 
-max(countSubtree(s->left,t), countSubtree(s->right,t));
+        return max(countSubtree(s->left,t), countSubtree(s->right,t));
 }
 ```
