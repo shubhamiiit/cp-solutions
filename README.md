@@ -8,7 +8,8 @@ Solution: Iska solution samjh nhi aarha
 
 2. https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
 
-Solution:
+Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf 
+        isme bahut sahi description hai
 
 3. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ```cpp
