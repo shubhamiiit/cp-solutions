@@ -102,3 +102,21 @@ int countSubtree(TreeNode* s, TreeNode* t) {
         return max(countSubtree(s->left,t), countSubtree(s->right,t));
 }
 ```
+# AppD
+See MCQ and these questions on https://imgur.com/a/PIXIxR8
+
+Post Solutions of these:
+
+1. UserName Disparity 
+2. Ticket Resellers
+3. Vowels
+4. Activate Fountain
+        https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
+5. Array of length n, sliding window of size x, get minimum value in all the windows and finally return the maximum. x <= n <= 1000000   
+
+sol.
+
+6. Angry animals
+sol.
+
+7.Almost Sorted Array - find minimum nos. That must be deleted so that array is almost sorted.
