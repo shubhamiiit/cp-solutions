@@ -4,8 +4,10 @@
 https://www.codechef.com/problems/ENCD12
 https://www.codechef.com/viewsolution/26846686
 
-2. https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
+Solution:
 
+2. https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
+Solution:
 
 3. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ```cpp
