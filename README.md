@@ -120,3 +120,37 @@ sol.
 sol.
 
 7.Almost Sorted Array - find minimum nos. That must be deleted so that array is almost sorted.
+sol.
+
+9. Mud Walls:
+https://fizzbuzzer.com/mud-walls/
+
+sol.
+```
+int maxHeight(int[] stickPositions, int[] stickHeights) {
+        int n = stickPositions.length;
+        int m = stickHeights.length;
+        int maxim = 0;
+
+        for (int i=0; i<n-1; i++) {
+            if (stickPositions[i]<stickPositions[i+1]-1) {
+                // We have a gap
+                int heightDiff =  abs(stickHeights[i+1] - stickHeights[i]);
+                int gapLen = stickPositions[i+1] - stickPositions[i] - 1;
+                int localMax = 0;
+                if (gapLen > heightDiff) {
+                    int low = max(stickHeights[i+1], stickHeights[i]) + 1;
+                    int remainingGap = gapLen - heightDiff - 1;
+                    localMax = low + remainingGap/2;
+
+                } else {
+                    localMax = min(stickHeights[i+1], stickHeights[i]) + gapLen;
+                }
+
+                maxim = max(max, localMax);
+            }
+        }
+
+        return maxim;
+    }
+```
