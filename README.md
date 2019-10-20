@@ -38,7 +38,37 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
 
-2.https://stackoverflow.com/questions/38790990/minimum-absolute-difference-between-2-non-contiguous-equal-subarrays
+2.minimum-absolute-difference-between-2-non-contiguous-equal-subarrays
+sol.
+```
+int mindifference(int *arr, int n){
+        set<int>st1,st2;
+        sort(arr, arr+n);
+        int i = 0, j = n-1;
+        bool in = true;
+        while(i<j){
+               if(in){
+                        st1.insert(arr[i++]);
+                        st1.insert(arr[j--]);
+                        in = false;
+               }
+               else{
+                        st2.insert(arr[i++]);
+                        st2.insert(arr[j--]);
+                        in = true;  
+               }
+        }
+        int sum1 = 0, sum2 = 0;
+        for(auto x:st1){
+                sum1 += x;
+        }
+        for(auto x:st2){
+                sum2 += x;
+        }
+        
+        return abs(abs(sum1 -sum2) - arr[i]);
+}
+```
 
 3.count nodes of subtrees of another subtree
 sol.
