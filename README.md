@@ -41,32 +41,27 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
 2.minimum-absolute-difference-between-2-non-contiguous-equal-subarrays
 sol.
 ```cpp
-int mindifference(int *arr, int n){
-        set<int>st1,st2;
-        sort(arr, arr+n);
-        int i = 0, j = n-1;
-        bool in = true;
-        while(i<j){
-               if(in){
-                        st1.insert(arr[i++]);
-                        st1.insert(arr[j--]);
-                        in = false;
-               }
-               else{
-                        st2.insert(arr[i++]);
-                        st2.insert(arr[j--]);
-                        in = true;  
-               }
+void solve(int ele,int currSum,int index,int maxe,int * arr,int & answer,int sum,int n){
+        if(ele==maxe){
+            int ssum=sum-currSum;
+            if(abs(currSum-ssum)<answer)
+                answer=abs(currSum-ssum);
+            return;
         }
-        int sum1 = 0, sum2 = 0;
-        for(auto x:st1){
-                sum1 += x;
+        if(index>=n){
+            return;
         }
-        for(auto x:st2){
-                sum2 += x;
-        }
-        
-        return abs(abs(sum1 -sum2) - arr[i]);
+        solve(ele+1,currSum+arr[index],index+1,maxe,arr,answer,sum,n);
+        solve(ele,currSum,index+1,maxe,arr,answer,sum,n);
+}
+int FindMinimumDifference(int *arr,int n){
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    int answer=INT_MAX;
+    solve(0,0,0,n/2,arr,answer,sum,n);
+    return answer;
 }
 ```
 
