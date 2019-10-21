@@ -221,3 +221,48 @@ int maxHeight(int[] stickPositions, int[] stickHeights) {
         return maxim;
     }
 ```
+# AMZ
+1. URLify
+	https://www.geeksforgeeks.org/urlify-given-string-replace-spaces/
+sol.
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+ {
+	int t;
+	cin >> t;
+	while(t--){
+	    string str;
+	    cin.ignore(100, '\n');
+	    getline(cin ,str);
+	    
+	    int k;
+	    cin >> k;
+	    
+	    int i=0;
+	   
+	    while(str[i] == ' '){
+	        i++;
+	    }
+	    
+	    reverse(str.begin(), str.end());
+	    i= 0;
+	    while(str[i] == ' '){
+	        i++;
+	    }
+	    reverse(str.begin(), str.end());
+	    
+	    string s = "";
+	    
+	    for(i=0;i<str.length();i++){
+	        if(str[i] == ' ')
+	            s += "%20";
+	        else
+	            s += str[i];
+	    }
+	    cout << s <<endl;
+	}
+	return 0;
+}
+```
