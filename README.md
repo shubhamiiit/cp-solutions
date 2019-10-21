@@ -111,9 +111,8 @@ Post Solutions of these:
 2. Ticket Resellers
 3. Vowels
 4. Activate Fountain
-        https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
+https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
 5. Array of length n, sliding window of size x, get minimum value in all the windows and finally return the maximum. x <= n <= 1000000   
-
 sol.
 
 6. Angry animals
