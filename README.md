@@ -321,3 +321,37 @@ map<int, int> sort_by_rank(map<int, int>mp) {
 	return res;
 }
 ```
+4. https://www.geeksforgeeks.org/dice-throw-dp-30/    
+
+sol.
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+ {
+	int t;
+	cin >> t;
+	while(t--){
+	    int val, n, sum;
+	    cin >> val >> n >> sum;
+	    
+	    vector<vector<long long>>dp(n+1,vector<long long>(sum+1, 0));
+	    
+	    for(int i=1;i<=val and i<=sum;i++){
+	        dp[1][i] = 1; 
+	    }
+	    
+	    for(int i=2;i<=n;i++){
+	        for(int j=1;j<=sum;j++){
+	            for(int k=1;k<=val;k++){
+	                if(j-k > 0)
+	                    dp[i][j] += dp[i-1][j-k];
+	            }
+	        }
+	    }
+	    
+	    cout << dp[n][sum] <<endl;
+	}
+	return 0;
+}
+```
