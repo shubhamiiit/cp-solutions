@@ -113,8 +113,40 @@ sol.
 6. Angry animals
 sol.
 
-7.Almost Sorted Array - find minimum nos. That must be deleted so that array is almost sorted.
-sol.
+7.Almost Sorted Array - find minimum nos that must be deleted so that array is almost sorted.(Longest Increasing Subsequence)
+sol. 
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+ {
+	int t;
+	cin >> t;
+	while(t--){
+	    int n;
+	    cin >> n;
+	    
+	    vector<int>A(n);
+	    for(int i=0;i<n;i++)cin >> A[i];
+	    vector<int>dp(n,1);
+	    
+	    int maxim = 0;
+	    for(int i=1;i<n;i++){
+	        for(int j=0;j<i;j++){
+	            if(A[i] > A[j] and dp[i] < dp[j]+1){
+	                dp[i] = dp[j] + 1;
+	            }
+	        }
+	    }
+	    
+	    for(int i=0;i<n;i++){
+	        maxim = max(maxim, dp[i]);
+	    }
+	    cout << n - maxim <<endl;
+	}
+	return 0;
+}
+```
 
 9. Mud Walls:
 https://fizzbuzzer.com/mud-walls/
