@@ -355,3 +355,27 @@ int main()
 	return 0;
 }
 ```
+# GSex
+1.https://leetcode.com/problems/product-of-array-except-self/submissions/
+sol.
+```cpp
+vector<int> productExceptSelf(vector<int>& nums) {
+	int n = nums.size();
+
+	vector<int>asc(n);
+
+	asc[0] = nums[0];
+
+	for(int i=1;i<n;i++){
+	    asc[i] = nums[i]*asc[i-1];
+	}
+
+	int r = 1;
+	for(int i=n-1;i>0;i--){
+	    asc[i] = asc[i-1]*r;
+	    r *= nums[i];
+	}
+	asc[0] = r;
+return asc;
+}
+```
