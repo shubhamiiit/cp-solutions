@@ -306,3 +306,18 @@ int main()
 	return 0;
 }
 ```
+3.Sort numbers when rank of each number in decimal system is changed.(Could anyone please elaborate the question or give some link of this question on some website)   as per my understanding when each number is mapped to another number for eg. 1 has rank 4, 2 has 9, etc and then you have to sort the modified number system.
+
+sol. This solution is mine, as question is unclear it may be possible that this solution is incorrect. 
+```cpp
+map<int, int> sort_by_rank(map<int, int>mp) {
+	map<int, int>res;
+	
+	for(auto i:mp){
+	    res[i.second] = i.first;
+	}
+	
+	sort(res.begin(), res.end());
+	return res;
+}
+```
