@@ -109,6 +109,47 @@ Post Solutions of these:
 https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
 5. Array of length n, sliding window of size x, get minimum value in all the windows and finally return the maximum. x <= n <= 1000000   
 sol.
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+ {
+	int t;
+	cin >> t;
+	
+	while(t--){
+	    int n,k;
+	    cin >> n >> k;
+	    vector<int>A(n);
+	    
+	    for(int i=0;i<n;i++)cin >> A[i];
+	    
+	    deque<int>Q;
+	    int i=0;
+	    for(i=0;i<k;i++){
+	        while(!Q.empty() and A[i] >= A[Q.back()])
+	            Q.pop_back();
+	        
+	        Q.push_back(i);
+	    }
+	    
+	    while(i<n){
+	        cout << A[Q.front()] <<" ";
+	        
+	        while(!Q.empty() and Q.front() <= i-k)
+	            Q.pop_front();
+	       
+	        while(!Q.empty() and A[i] >= A[Q.back()])
+	            Q.pop_back();
+	            
+	        Q.push_back(i);
+	        i++;
+	    }
+	    cout << A[Q.front()] <<endl;
+	}
+	return 0;
+}
+```
 
 6. Angry animals
 sol.
