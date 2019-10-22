@@ -1,5 +1,6 @@
 # Micro 
 1. Minimum adjacent swap required to make a string palindrome.
+
 (solutionhttps://stackoverflow.com/questions/51796237/minimum-number-of-swaps-to-convert-a-string-to-palindrome?fbclid=IwAR0cd5QgtoVZHHyuoCspcI7KDVhjA8VdqmytEqQLyOSmCWXRi6tcql7fj60)
 https://www.codechef.com/problems/ENCD12
 https://www.codechef.com/viewsolution/26846686
@@ -39,6 +40,7 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
 
 2.minimum-absolute-difference-between-2-non-contiguous-equal-subarrays
+
 sol.
 ```cpp
 void solve(int ele,int currSum,int index,int maxe,int * arr,int & answer,int sum,int n){
@@ -66,6 +68,7 @@ int FindMinimumDifference(int *arr,int n){
 ```
 
 3.count nodes of subtrees of another subtree
+
 sol.
 ```cpp
 int count(TreeNode* tree){
@@ -108,6 +111,7 @@ Post Solutions of these:
 4. Activate Fountain
 https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
 5. Array of length n, sliding window of size x, get minimum value in all the windows and finally return the maximum. x <= n <= 1000000   
+
 sol.
 ## imp
 ```cpp
@@ -153,10 +157,13 @@ int main()
 ```
 
 6. Angry animals
+
 sol.
 
 7.Almost Sorted Array - find minimum nos that must be deleted so that array is almost sorted.(Longest Increasing Subsequence)
+
 sol.
+
 My code
 ```cpp
 #include<bits/stdc++.h>
@@ -192,6 +199,7 @@ int main()
 ```
 
 9. Mud Walls:
+
 https://fizzbuzzer.com/mud-walls/
 
 sol.
@@ -225,8 +233,9 @@ int maxHeight(int[] stickPositions, int[] stickHeights) {
 ```
 # AMZ
 1. URLify
-	https://www.geeksforgeeks.org/urlify-given-string-replace-spaces/
-sol.
+
+sol. https://www.geeksforgeeks.org/urlify-given-string-replace-spaces/
+
 My code
 ```cpp
 #include<bits/stdc++.h>
@@ -270,6 +279,7 @@ int main()
 }
 ```
 2. Count possible decodings of given Digit sequence DP question 
+
 sol. https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
 
 3.Sort numbers when rank of each number in decimal system is changed.(Could anyone please elaborate the question or give some link of this question on some website)   as per my understanding when each number is mapped to another number for eg. 1 has rank 4, 2 has 9, etc and then you have to sort the modified number system.
@@ -288,18 +298,23 @@ map<int, int> sort_by_rank(map<int, int>mp) {
 }
 ```
 4. Dice throw DP question 
+
 sol. https://www.geeksforgeeks.org/dice-throw-dp-30/
 
 6. Longest Increasing Sequence and Longest Decreasing Sequence
+
 sol. https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
 
 7. Longest Common Subsequence
+
 sol. https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
 
 8.Find the length of smallest substring with maximum number of distinct characters.
+
 sol. Microsoft 3rd Question
 
 9. Euler Totient Function
+
 sol. https://www.geeksforgeeks.org/eulers-totient-function/
 
 10. Evaluation of Postfix Expression
@@ -311,6 +326,7 @@ sol. https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
 sol. https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
+
 sol.
 ```cpp
 vector<int> productExceptSelf(vector<int>& nums) {
