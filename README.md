@@ -302,6 +302,13 @@ sol. Microsoft 3rd Question
 9. Euler Totient Function
 sol. https://www.geeksforgeeks.org/eulers-totient-function/
 
+10. Evaluation of Postfix Expression
+
+sol. https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
+
+11. Infix to Postfix expression
+
+sol. https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
 sol.
