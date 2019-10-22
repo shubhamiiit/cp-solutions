@@ -299,6 +299,9 @@ sol. https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
 8.Find the length of smallest substring with maximum number of distinct characters.
 sol. Microsoft 3rd Question
 
+9. Euler Totient Function
+sol. https://www.geeksforgeeks.org/eulers-totient-function/
+
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
 sol.
