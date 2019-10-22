@@ -344,6 +344,21 @@ sol. https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
 11. Infix to Postfix expression
 
 sol. https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
+
+12. Maximum contigouous subarray sum
+
+sol. 
+```cpp
+int max_sum(int A[], int N){
+    long long best = LONG_MIN,sum = 0;
+	    
+    for(int i=0;i<N;i++){
+	sum = max(A[i], sum+A[i]);
+	best = max(best, sum);
+    }
+   return best;    
+}
+```
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
 
