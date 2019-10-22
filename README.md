@@ -109,6 +109,7 @@ Post Solutions of these:
 https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
 5. Array of length n, sliding window of size x, get minimum value in all the windows and finally return the maximum. x <= n <= 1000000   
 sol.
+## imp
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -155,7 +156,8 @@ int main()
 sol.
 
 7.Almost Sorted Array - find minimum nos that must be deleted so that array is almost sorted.(Longest Increasing Subsequence)
-sol. 
+sol.
+My code
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -225,6 +227,7 @@ int maxHeight(int[] stickPositions, int[] stickHeights) {
 1. URLify
 	https://www.geeksforgeeks.org/urlify-given-string-replace-spaces/
 sol.
+My code
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
@@ -266,46 +269,9 @@ int main()
 	return 0;
 }
 ```
-2.https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
-sol.
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-int main()
- {
-	int t;
-	cin >> t;
-	
-	while(t--){
-	    int n;
-	    cin >> n;
-	    
-	    string s;
-	    cin >> s;
-	    
-	    vector<int>dp(n+1, 0);
-	    
-	    dp[0] = 1;
-	    dp[1] = 1;
-	    
-	    if(s[0] == '0'){
-	        cout << 0 <<endl;
-	        continue;
-	    }
-	    
-	    for(int i=2;i<=n;i++){
-	        if(s[i-1] > '0')
-	            dp[i] = dp[i-1];
-	            
-	        if(s[i-2] == '1' || (s[i-2] == '2' and s[i-1] < '7'))
-	            dp[i] += dp[i-2];
-	    }
-	    
-	    cout << dp[n] <<endl;
-	}
-	return 0;
-}
-```
+2. Count possible decodings of given Digit sequence DP question 
+sol. https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
+
 3.Sort numbers when rank of each number in decimal system is changed.(Could anyone please elaborate the question or give some link of this question on some website)   as per my understanding when each number is mapped to another number for eg. 1 has rank 4, 2 has 9, etc and then you have to sort the modified number system.
 
 sol. This solution is mine, as question is unclear it may be possible that this solution is incorrect. 
@@ -321,40 +287,18 @@ map<int, int> sort_by_rank(map<int, int>mp) {
 	return res;
 }
 ```
-4. https://www.geeksforgeeks.org/dice-throw-dp-30/    
+4. Dice throw DP question 
+sol. https://www.geeksforgeeks.org/dice-throw-dp-30/
 
-sol.
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-int main()
- {
-	int t;
-	cin >> t;
-	while(t--){
-	    int val, n, sum;
-	    cin >> val >> n >> sum;
-	    
-	    vector<vector<long long>>dp(n+1,vector<long long>(sum+1, 0));
-	    
-	    for(int i=1;i<=val and i<=sum;i++){
-	        dp[1][i] = 1; 
-	    }
-	    
-	    for(int i=2;i<=n;i++){
-	        for(int j=1;j<=sum;j++){
-	            for(int k=1;k<=val;k++){
-	                if(j-k > 0)
-	                    dp[i][j] += dp[i-1][j-k];
-	            }
-	        }
-	    }
-	    
-	    cout << dp[n][sum] <<endl;
-	}
-	return 0;
-}
-```
+6. Longest Increasing Sequence and Longest Decreasing Sequence
+sol. https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
+
+7. Longest Common Subsequence
+sol. https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
+
+8.Find the length of smallest substring with maximum number of distinct characters.
+sol. Microsoft 3rd Question
+
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
 sol.
