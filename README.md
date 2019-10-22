@@ -316,7 +316,27 @@ sol. Microsoft 3rd Question
 9. Euler Totient Function
 
 sol. https://www.geeksforgeeks.org/eulers-totient-function/
+ First solution in discussion is segmented sieve.
+ 
+10. Mean Mode Median of an Unsorted Array.
 
+sol. https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/
+
+```cpp
+int mode(int a[], int n){
+	map<int, int>mp;
+	int max;
+	int val;
+	for(int i=0;i<n;i++){
+		mp[a[i]]++;
+		if(max < mp[a[i]]){
+			max = mp[a[i]];
+			val = a[i];
+		}
+	}
+	return val;
+}
+```
 10. Evaluation of Postfix Expression
 
 sol. https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
