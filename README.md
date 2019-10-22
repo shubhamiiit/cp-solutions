@@ -359,6 +359,18 @@ int max_sum(int A[], int N){
    return best;    
 }
 ```
+13. Given a, b and c coefficients of a quadratic equation, find the roots of the equation(assume roots to be real).
+
+sol.
+```cpp
+pair<double, double> roots_of_Q(int a, int b, int c){
+    pair<double, double>p;
+    p.first = (-b + sqrt((b*b) - (4*a*c)))/(2*a);
+    p.second = (-b - sqrt((b*b) - (4*a*c)))/(2*a);
+    return p;
+}
+```
+
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
 
