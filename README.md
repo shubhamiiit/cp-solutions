@@ -83,7 +83,7 @@ node* segregate(node* head){
 }
 ```
 
-# Samsu
+# Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
 
