@@ -86,6 +86,10 @@ node* segregate(node* head){
 
 sol. https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/(1-D DP)
 
+6.Find Median in a stream
+
+sol.https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
