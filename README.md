@@ -90,6 +90,10 @@ sol. https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adj
 
 sol.https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0
 
+7. Maximum points on a same line.
+
+sol.https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
