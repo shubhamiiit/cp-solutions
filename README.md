@@ -94,6 +94,10 @@ sol.https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0
 
 sol.https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
 
+8. Diameter of a tree
+
+sol.https://www.geeksforgeeks.org/diameter-of-a-binary-tree-in-on-a-new-method/
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
