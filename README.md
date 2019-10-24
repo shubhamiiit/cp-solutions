@@ -35,6 +35,54 @@ Solution:http://people.csail.mit.edu/indyk/6.838-old/handouts/lec17.pdf
         return res;
     }
 ```
+4. https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/
+sol.
+
+My Code
+```cpp
+node* segregate(node* head){
+    if(!head or !head->next)
+        return NULL;
+    
+    node* temp = head;
+    while(temp){
+        if(temp->val%2)
+            break;
+        temp = temp->next;
+    }
+    node* odd_start = temp;
+    
+    temp = head;
+    while(temp){
+        if(temp->val%2 == 0)
+            break;
+        temp = temp->next;
+    }
+    node* even_start = temp;
+    
+    if(odd_start == NULL || even_start == NULL)
+        return head;
+        
+    temp = head;
+    node* odd = new node(0);
+    node* even = new node(0);
+    while(temp){
+        if(temp->val%2 == 0){
+            even->next = temp;
+            even = even->next;
+        }
+        else{
+            odd->next = temp;
+            odd = odd->next;
+        }
+        temp = temp->next;
+    }
+    even->next = odd_start;
+    odd->next = NULL;
+    return even_start;
+}
+```
+
 # Samsu
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
