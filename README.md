@@ -82,6 +82,9 @@ node* segregate(node* head){
     return even_start;
 }
 ```
+5. Maximum sum such that no two elements are adjacent
+
+sol. https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/(1-D DP)
 
 # Sam
 
