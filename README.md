@@ -98,6 +98,10 @@ sol.https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
 
 sol.https://www.geeksforgeeks.org/diameter-of-a-binary-tree-in-on-a-new-method/
 
+9. Perfect sum Problem
+
+sol. https://ide.geeksforgeeks.org/9RUT7vHrby
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
