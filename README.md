@@ -106,6 +106,10 @@ sol. https://ide.geeksforgeeks.org/9RUT7vHrby
 
 sol. https://practice.geeksforgeeks.org/problems/rotten-oranges/
 
+12. Boundary Traversal of a Tree
+
+sol. https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
