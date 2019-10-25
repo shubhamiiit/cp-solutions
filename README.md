@@ -102,6 +102,10 @@ sol.https://www.geeksforgeeks.org/diameter-of-a-binary-tree-in-on-a-new-method/
 
 sol. https://ide.geeksforgeeks.org/9RUT7vHrby
 
+11. Rotten-Oranges problem
+
+sol. https://practice.geeksforgeeks.org/problems/rotten-oranges/
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
