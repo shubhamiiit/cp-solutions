@@ -110,6 +110,53 @@ sol. https://practice.geeksforgeeks.org/problems/rotten-oranges/
 
 sol. https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
 
+13. Ugly Numbers Solution
+
+sol. 
+```cpp
+#include<bits/stdc++.h>
+
+#define ll long long
+
+using namespace std;
+
+ll f(ll x){
+    return((x/2+x/3+x/5) - (x/6+x/15+x/10) + x/30);
+}
+ll bsearch(ll x,ll lo, ll hi){
+    ll ans;
+    while(lo <= hi){
+        ll mid = lo + (hi-lo)/2; // find mid
+        
+        ll count = f(mid); // find what uglieth number is mid
+        
+        if(count < x)
+            lo = mid+1;
+        else if(x < count)
+            hi = mid-1;
+        else{
+            ans = mid;
+            hi = mid-1;  // it may be possible that ans came from rounding off x
+        }
+    }
+    return ans;
+}
+int nthUglyNumber(int n) {
+    
+    return bsearch(n, 1, (ll)pow(10,18));
+}
+
+int main(){
+    int T, N;
+    cin >> T;
+    while(T--){
+        cin >> N;
+        
+        cout << nthUglyNumber(N-1)<<endl;
+    }
+}
+```
+
 # Sam
 
 1.https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
