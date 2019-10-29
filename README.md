@@ -492,6 +492,9 @@ pair<double, double> roots_of_Q(int a, int b, int c){
     return p;
 }
 ```
+14. Serialize and deserialize a n-ary Tree
+
+sol. https://www.cnblogs.com/Dylan-Java-NYC/p/11056027.html
 
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
