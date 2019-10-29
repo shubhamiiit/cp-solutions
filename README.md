@@ -496,6 +496,10 @@ pair<double, double> roots_of_Q(int a, int b, int c){
 
 sol. https://www.cnblogs.com/Dylan-Java-NYC/p/11056027.html
 
+15. Nth node from last
+
+sol.https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
+
 # GSex
 1.https://leetcode.com/problems/product-of-array-except-self/submissions/
 
