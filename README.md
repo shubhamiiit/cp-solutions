@@ -525,3 +525,9 @@ vector<int> productExceptSelf(vector<int>& nums) {
 return asc;
 }
 ```
+# MathWorks
+
+1. Roll a string
+
+sol. https://github.com/msdeep14/Algorithms-Practice/blob/master/roll-string.cpp
+
