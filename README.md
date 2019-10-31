@@ -534,3 +534,36 @@ sol. https://github.com/msdeep14/Algorithms-Practice/blob/master/roll-string.cpp
 2. Find two numbers with their XORs and Sum
 
 sol.https://www.geeksforgeeks.org/find-two-numbers-sum-xor/
+
+# Adobe
+
+1. Given an array, Just remove adjacent pairs of duplicate elements and return number of remaining elements.
+Eg. A=[1,1,2,2,3] so answer is 1
+
+If A=[1,1,2,2,1,3] so answer is 2. (3rd one will not be removed as it will not form a pair with any other 1)
+
+if A=[1,2,2,1,3,3] so answer is 0.
+
+Sol. 
+```cpp
+vector<int> rem_adj_pairs(vector<int> &A){
+	stack<int>st;
+	for(int i=0;i<n;i++){
+		if(!st.empty()){
+			if(st.top() == A[i])
+				st.pop();
+			else
+				st.push(A[i]);
+		}
+		else
+			st.push(A[i]);
+	}
+	vector<int>res;
+	while(!st.empty()){
+		res.push_back(st.top());
+		st.pop();
+	}
+	return res;
+}
+
+```
