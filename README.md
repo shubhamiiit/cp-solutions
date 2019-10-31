@@ -531,3 +531,6 @@ return asc;
 
 sol. https://github.com/msdeep14/Algorithms-Practice/blob/master/roll-string.cpp
 
+2. Find two numbers with their XORs and Sum
+
+sol.https://www.geeksforgeeks.org/find-two-numbers-sum-xor/
