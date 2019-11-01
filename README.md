@@ -546,9 +546,9 @@ if A=[1,2,2,1,3,3] so answer is 0.
 
 Sol. 
 ```cpp
-vector<int> rem_adj_pairs(vector<int> &A){
+int rem_adj_pairs(vector<int> &A){
 	stack<int>st;
-	for(int i=0;i<n;i++){
+	for(int i=0;i<A.size();i++){
 		if(!st.empty()){
 			if(st.top() == A[i])
 				st.pop();
@@ -558,12 +558,41 @@ vector<int> rem_adj_pairs(vector<int> &A){
 		else
 			st.push(A[i]);
 	}
-	vector<int>res;
-	while(!st.empty()){
-		res.push_back(st.top());
-		st.pop();
-	}
-	return res;
+
+	return st.size();
 }
 
+```
+2. Given a string s. Return substring of length 5 which occurs maximum times. If several of them exists, then you know what to do.
+Yes, return the lexicographicaly smallest one. 5<=N<=10^6.
+
+Eg. s= “bbbbbaaaaabbabababa. So answer is “ababa”.
+
+Eg. s=”heisagoodboy” So answer is “agood”.
+
+sol. 
+```cpp
+string max_substring_5(string str){
+	set<string>st;
+	unordered_map<string,int>mp;
+	
+	for(int i=0;i<=str.length()-5;i++){
+	    string s = str.substr(i,5);
+	    mp[s]++;
+	}
+	long long maxi = 0;
+	for(auto i:mp){
+	    if(i.second > maxi){
+	        maxi = i.second;
+	    }
+	}
+	
+	for(auto i:mp){
+	    if(i.second == maxi){
+	        st.insert(i.first);
+	    }
+	}
+
+	return *st.begin();
+}
 ```
