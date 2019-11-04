@@ -229,6 +229,46 @@ Post Solutions of these:
 
 1. UserName Disparity 
 2. Ticket Resellers
+
+sol:
+
+#include <bits/stdc++.h>
+using namespace std;
+const int mod=1000000007;
+int main() {
+	
+	long long t,n,k,x;
+	cin>>t;
+	while(t--)
+	{
+        long long mx=LONG_MIN;
+        long long ans=0;
+	    cin>>n>>k;
+	    long long a[1000005]={0};
+	    for(long long i=0;i<n;i++)
+	    {
+	        cin>>x;
+	        a[x]++;
+	        mx=max(mx,x);
+	    }
+	    
+	    for(long long i=mx;i>=0&&k>0;i--)
+	    {
+	        while(a[i]&&k)
+	        {
+	            ans=(ans%mod+i%mod)%mod;
+	            a[i]--;
+	            a[i-1]++;
+	            k--;
+	        }
+	    }
+	    cout<<ans<<endl;
+	    
+	}
+
+	return 0;
+}
+
 3. Vowels
 4. Activate Fountain
 https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
