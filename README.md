@@ -231,7 +231,7 @@ Post Solutions of these:
 2. Ticket Resellers
 
 sol:
-
+```
 #include <bits/stdc++.h>
 using namespace std;
 const int mod=1000000007;
@@ -268,7 +268,7 @@ int main() {
 
 	return 0;
 }
-
+```
 3. Vowels
 4. Activate Fountain
 https://leetcode.com/discuss/interview-question/363036/twitter-oa-2019-activate-fountain
